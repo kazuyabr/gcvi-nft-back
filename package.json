@@ -1,0 +1,47 @@
+{
+  "name": "gcvi-nft-back",
+  "version": "1.0.0",
+  "description": "Gestao de compra e venda de NFT",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
+    "start": "npm run build && node build/index.ts",
+    "build": "rimraf ./build && tsc",
+    "test": "jest --watchALL"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuyabr/gcvi-nft-back.git"
+  },
+  "author": "Equipe Jogatinando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazuyabr/gcvi-nft-back/issues"
+  },
+  "homepage": "https://github.com/kazuyabr/gcvi-nft-back#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.0",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.3",
+    "jwt-simple": "^0.5.6",
+    "knex": "^1.0.6",
+    "moment": "^2.29.2",
+    "mysql": "^2.18.1",
+    "node-schedule": "^2.1.0",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.7.3"
+  }
+}
